@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>Document</title>
+    <style>
+        .contact-area__items-icon {
+            position: relative;
+            width: 28px;
+            height: 40px;
+        }
+
+        .contact-area__items-icon::before {
+            content: "";
+            background-image: url('img/Vector.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 28px;
+            height: 40px;
+            position: absolute;
+        }
+
+        .contact-area__title {
+            margin-bottom: 52px;
+            font-size: 36px;
+            line-height: 40px;
+            text-transform: uppercase;
+            color: #333333;
+        }
+
+        .contact-area__items-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 135.4%;
+            color: #333333;
+            margin: 15px 0px 30px;
+        }
+
+        .contact-area__items-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 140%;
+            color: #333333;
+        }
+
+        .contact {
+            padding: 100px 0px 116px;
+        }
+
+        .contact-form__input {
+            width: 100%;
+            margin: 9px 0px;
+        }
+
+        .check_box-bg {
+            display: block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #333333;
+            border-radius: 100%;
+            position: relative;
+            z-index: 9999;
+            cursor: pointer;
+        }
+
+        .check_box-bg::before {
+            content: "";
+            background-image: url('img/check.png');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .check_box input[type=checkbox]:checked~span::before {
+            visibility: visible;
+            left: 4px;
+            top: 1px;
+        }
+
+        .check_box input[type=checkbox]:checked~.check_box-bg {
+            border: none;
+            background-image: url('img/Vector-bg.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section contact">
+        <div class="container">
+            <h1 class="contact-area__title">Контакты</h1>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact-area__items d-flex flex-column">
+                        <p class="contact-area__items-icon"></p>
+                        <span class="contact-area__items-title">Приходи</span>
+                        <p class="contact-area__items-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id egestas pellentesque amet
+                            blandit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="contact-area__items d-flex flex-column">
+                        <p class="contact-area__items-icon"></p>
+                        <span class="contact-area__items-title">Приходи</span>
+                        <p class="contact-area__items-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id egestas pellentesque amet
+                            blandit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="contact-area__items d-flex flex-column">
+                        <p class="contact-area__items-icon"></p>
+                        <span class="contact-area__items-title">Приходи</span>
+                        <p class="contact-area__items-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id egestas pellentesque amet
+                            blandit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="contact-area__items d-flex flex-column">
+                        <p class="contact-area__items-icon"></p>
+                        <span class="contact-area__items-title">Приходи</span>
+                        <p class="contact-area__items-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id egestas pellentesque amet
+                            blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form__title">
+                        <h2>Будьте в контакте с нами</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at turpis donec libero
+                            condimentum. Maecenas lorem tincidunt eget cursus.
+                        </p>
+                    </div>
+                    <form action="">
+                        <div class="form__inputs">
+                            <input type="text" class="form__input contact-form__input" placeholder="Ваше имя*">
+                            <input type="text" class="form__input contact-form__input" placeholder="Ваше телефон*">
+                            <input type="text" class="form__input contact-form__input" placeholder="Адрес сайта*">
+                        </div>
+                        <div class="d-flex">
+                            <label for="check_box" class="check_box">
+                                <input type="checkbox" id="check_box" class="d-none">
+                                <span class="check_box-bg">
+                                </span>
+                            </label>
+                            <p class="check_box-text">Нажимая “Отправить” вы соглашаетесь с политикой конфиденциальности
+                                и условиями. </p>
+                        </div>
+                        <button class="button form__btn" type="sumbit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
